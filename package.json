@@ -18,5 +18,28 @@
   },
   "devDependencies": {
     "domready": "^1.0.5"
-  }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattdesl/fontpath.git"
+  },
+  "keywords": [
+    "font",
+    "fonts",
+    "ttf",
+    "otf",
+    "woff",
+    "freetype",
+    "freetype2",
+    "vector",
+    "outline",
+    "decompose"
+  ],
+  "bugs": {
+    "url": "https://github.com/mattdesl/fontpath/issues"
+  },
+  "homepage": "https://github.com/mattdesl/fontpath"
 }
