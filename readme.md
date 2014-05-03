@@ -8,11 +8,11 @@ The project is similar to [typeface.js](http://typeface.neocracy.org/) and [cufo
 - NPM/node tooling, eventual integration with build tools
 - decoupled modules, e.g. outline generator doesn't depend on rendering utils
 - rendering engine isn't tied to Canvas (or even the browser; e.g. you could use node-canvas)
-- eventually, these tools could be used by a server to generate paths and hinted bitmap data for the client
+- eventually, these tools could be used by a server to generate paths or hinted bitmap data for the client
 - TTF, OTF, WOFF, and most other formats supported (FreeType2)
 - font converter is an offline tool and fairly easy to modify (i.e. for a custom JSON/binary exporter)
 - you can specify any charsets with the API (e.g. foreign and icon fonts)
-
+- other stuff: hit detection on paths, advanced glyph/face metrics
 
 # example
 

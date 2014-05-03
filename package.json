@@ -13,7 +13,6 @@
   "license": "MIT",
   "dependencies": {
     "freetype2": "git://github.com/mattdesl/node-freetype2#shapes",
-    "fontutils": "0.0.0",
     "optimist": "^0.6.1"
   },
   "devDependencies": {
