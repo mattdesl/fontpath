@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+var fs = require('fs');
+var argv = require('optimist')
+		.usage('fontpath [options] path/to/FontFile.ttf')
+		.demand(1)
+		.alias('c', 'chars')
+		.describe('c', 'the character set: all, ascii, ascii-extended')
+		.default('c', 'ascii')
+		.alias('s', 'size')
+		.default('s', 12)
+		.describe('s', 'the font size in points')
+		.alias('r', 'resolution')
+		.describe('r', 'the resolution in DPI')
+		.default('r', 72)
+		.alias('o', 'output')
+		.describe('o', 'a file to save the data to')
+		.describe('commonJS', 'wrap with module.exports for a JS file')
+		.describe('ignoreKerning', 'ignore kerning')
+		.describe('ignorePath', 'ignore font outlines')
+		.describe('pretty', 'pretty-print the output')
+		.argv;
+
+var parse = require('../lib/index.js');
+
+fs.readFile(argv._[0], function(err, buffer) {
+	if (err) 
+		throw err;
+
+	parse(buffer, {
+		output: argv.o,
+		commonJS: argv.commonJS,
+		prettyPrint: argv.pretty,
+		ignoreKerning: argv.ignoreKerning,
+		ignorePath: argv.ignorePath,
+		resolution: argv.resolution,
+		size: argv.size,
+		charcodes: argv.c,
+	});
+});

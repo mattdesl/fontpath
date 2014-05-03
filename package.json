@@ -1,0 +1,22 @@
+{
+  "name": "fontpath",
+  "version": "0.0.0",
+  "description": "Generates path and kerning info from a font",
+  "main": "index.js",
+  "bin": {
+    "fontpath": "./bin/fontpath"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt DesLauriers",
+  "license": "MIT",
+  "dependencies": {
+    "freetype2": "git://github.com/mattdesl/node-freetype2#shapes",
+    "fontutils": "0.0.0",
+    "optimist": "^0.6.1"
+  },
+  "devDependencies": {
+    "domready": "^1.0.5"
+  }
+}
