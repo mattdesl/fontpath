@@ -1,6 +1,6 @@
 {
   "name": "fontpath",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generates path and kerning info from a font",
   "main": "index.js",
   "bin": {
