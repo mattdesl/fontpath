@@ -12,7 +12,7 @@
   "author": "Matt DesLauriers",
   "license": "MIT",
   "dependencies": {
-    "freetype2": "^0.2.0",
+    "freetype2": "mattdesl/node-freetype2#shapes",
     "optimist": "^0.6.1"
   },
   "devDependencies": {
