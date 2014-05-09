@@ -19,3 +19,15 @@ The project is similar to [typeface.js](http://typeface.neocracy.org/) and [cufo
 ```fontpath myfont.ttf -o mfont.json --size 128```
 
 The default size is 12 pt, but exporting with a higher font size will give you better resolution when rendering the path at large sizes.
+
+# modules
+
+The framework is split into separate modules. Some of them are not necessarily specific to fontpath, but may be effective to use alongside it.
+
+- [fontpath-util](https://github.com/mattdesl/fontpath-util) - EM-to-pixel utils
+- [shape2d](https://github.com/mattdesl/shape2d) - Converts bezier/quadratic curves into points, with HTML5CanvasContext-like API
+- [fontpath-shape2d](https://github.com/mattdesl/fontpath-shape2d) - decomposes a fontpath JSON/JS glyph into points with shape2d
+- [shape2d-triangulate](https://github.com/mattdesl/shape2d-triangulate) - triangulates a list of Shapes from shape2d, ideal for triangulating fontpath glyphs
+- [fontpath-test-fonts](https://github.com/mattdesl/fontpath-test-fonts) - some fonts that have already been exported to JSON, so you can easily pull in test fonts with NPM
+- [fontpath-vecmath](https://github.com/mattdesl/fontpath-vecmath) - vector/matrix utilities for font and glyph faces, built on [vecmath](https://github.com/mattdesl/vecmath)
+- [point-util](https://github.com/mattdesl/point-util) - used by shape2d-triangulate, but includes a couple of handy features like `pointInPoly`
