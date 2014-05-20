@@ -28,3 +28,27 @@ This project is a heavy WIP. Some things I want to explore:
 - Bitmap font rendering and atlas packing for Canvas/WebGL
 - Basic support for styled/attributed text (italics, bold, color, etc)
 - Maybe some tools for SDF rendering
+
+# demos
+
+- [Triangulated text effect](http://mattdesl.github.io/fontpath-renderer/demo/tris.html) - a custom renderer using triangles 
+- [Custom steiner points](http://mattdesl.github.io/shape2d-triangulate/demo/glyph.html) - finer control over triangulation for creative effects
+
+# modules
+
+The framework is split into many small modules. Some of them aren't specific to fontpath, but are useful alongside it. You generally won't need to use all of them together; but instead, you'll pick and choose based on your particular application.
+
+Most commonly, you might want to use a "renderer" which gives you a basic word-wrapper and glyph layout tools. 
+
+- [fontpath-renderer](https://github.com/mattdesl/fontpath-renderer) - the abstract base for implementing custom text effects
+- [fontpath-canvas](https://github.com/mattdesl/fontpath-canvas) - a renderer using 2D Canvas and paths for fill/stroke
+
+Some other utilities that make up the ecosystem:
+
+- [fontpath-util](https://github.com/mattdesl/fontpath-util) - point to pixel utilities
+- [shape2d](https://github.com/mattdesl/shape2d) - Converts bezier/quadratic curves into points, with HTML5CanvasContext-like API
+- [shape2d-triangulate](https://github.com/mattdesl/shape2d-triangulate) - triangulates a list of Shapes from shape2d, ideal for triangulating fontpath glyphs. uses poly2tri
+- [fontpath-shape2d](https://github.com/mattdesl/fontpath-shape2d) - decomposes a fontpath JSON/JS glyph into points with shape2d
+- [fontpath-test-fonts](https://github.com/mattdesl/fontpath-test-fonts) - some fonts that have already been exported to JSON, so you can easily pull them in with NPM
+- [fontpath-vecmath](https://github.com/mattdesl/fontpath-vecmath) - vector/matrix utilities for font and glyph faces, built on [vecmath](https://github.com/mattdesl/vecmath)
+- [point-util](https://github.com/mattdesl/point-util) - used by shape2d-triangulate, but includes a couple of handy features like `pointInPoly`
