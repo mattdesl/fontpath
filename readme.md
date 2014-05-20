@@ -45,6 +45,7 @@ Most commonly, you might want to use a "renderer" which gives you a basic word-w
 
 Some other utilities that make up the ecosystem:
 
+- [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap) a basic word wrapper that supports `pre` and `nowrap` (for parity with CSS)
 - [fontpath-util](https://github.com/mattdesl/fontpath-util) - point to pixel utilities
 - [shape2d](https://github.com/mattdesl/shape2d) - Converts bezier/quadratic curves into points, with HTML5CanvasContext-like API
 - [shape2d-triangulate](https://github.com/mattdesl/shape2d-triangulate) - triangulates a list of Shapes from shape2d, ideal for triangulating fontpath glyphs. uses poly2tri
