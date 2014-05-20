@@ -6,7 +6,7 @@ The project is similar to [typeface.js](http://typeface.neocracy.org/) and [cufo
 
 - Stronger focus on WebGL/animations/effects rather than trying to replace DOM text rendering
 - NPM/node tooling, eventual integration with build tools
-- decoupled modules, e.g. outline generator doesn't depend on rendering utils
+- decoupled modules, e.g. outline generator doesn't depend on rendering utils, glyph layout doesn't depend on canvas rendering
 - rendering engine isn't tied to Canvas (or even the browser; e.g. you could use node-canvas)
 - eventually, these tools could be used by a server to generate paths or hinted bitmap data for the client
 - TTF, OTF, WOFF, and most other formats supported (FreeType2)
@@ -18,4 +18,13 @@ The project is similar to [typeface.js](http://typeface.neocracy.org/) and [cufo
 
 ```fontpath myfont.ttf -o mfont.json --size 128```
 
-The default size is 12 pt, but exporting with a higher font size will give you better resolution when rendering the path at large sizes.
+The default size is 12 pt, but exporting with a higher font size will give you better resolution when rendering the path at large sizes. It's best to match the exported size to the final rendered size, as it will produce better rounding when scaled down.
+
+# roadmap
+
+This project is a heavy WIP. Some things I want to explore:
+
+- WebGL implementations for [kami](https://github.com/mattdesl/kami) and ThreeJS
+- Bitmap font rendering and atlas packing for Canvas/WebGL
+- Basic support for styled/attributed text (italics, bold, color, etc)
+- Maybe some tools for SDF rendering
