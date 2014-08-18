@@ -1,6 +1,8 @@
-# vector font tools
+# fontpath
 
-Generates paths and kerning data from a TTF/OTF/WOFF/etc font. The paths can then be decomposed into points, or rendered to a canvas, or triangulated.
+[![experimental](http://badges.github.io/stability-badges/dist/experimental.svg)](http://github.com/badges/stability-badges)
+
+A tool which generates paths and kerning data from a TTF/OTF/WOFF/etc font. The paths can then be decomposed into points, or rendered to a canvas, or triangulated.
 
 The project is similar to [typeface.js](http://typeface.neocracy.org/) and [cufon](http://cufon.shoqolate.com/generate/). Both of those tools are very old, and were made before @font-face gained widespread support. This project has a few different goals in mind:
 
@@ -24,10 +26,10 @@ The default size is 12 pt, but exporting with a higher font size will give you b
 
 This project is a heavy WIP. Some things I want to explore:
 
-- WebGL implementations for [kami](https://github.com/mattdesl/kami) and ThreeJS
 - Bitmap font rendering and atlas packing for Canvas/WebGL
 - Basic support for styled/attributed text (italics, bold, color, etc)
 - Maybe some tools for SDF rendering
+- Better Node/CLI integration
 
 # demos
 
@@ -40,11 +42,12 @@ The framework is split into many small modules. Some of them aren't specific to 
 
 Most commonly, you might want to use a "renderer" which gives you a basic word-wrapper and glyph layout tools. 
 
-- [fontpath-renderer](https://github.com/mattdesl/fontpath-renderer) - the abstract base for implementing custom text effects
 - [fontpath-canvas](https://github.com/mattdesl/fontpath-canvas) - a renderer using 2D Canvas and paths for fill/stroke
+- [fontpath-gl](https://github.com/mattdesl/fontpath-gl) - a WebGL renderer using stackgl modules
 
 Some other utilities that make up the ecosystem:
 
+- [fontpath-simple-renderer](https://github.com/mattdesl/fontpath-simple-renderer) a generic renderer, useful if you need something more optimized
 - [fontpath-wordwrap](https://github.com/mattdesl/fontpath-wordwrap) a basic word wrapper that supports `pre` and `nowrap` (for parity with CSS)
 - [fontpath-util](https://github.com/mattdesl/fontpath-util) - point to pixel utilities
 - [shape2d](https://github.com/mattdesl/shape2d) - Converts bezier/quadratic curves into points, with HTML5CanvasContext-like API
