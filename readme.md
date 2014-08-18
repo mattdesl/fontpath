@@ -56,3 +56,8 @@ Some other utilities that make up the ecosystem:
 - [fontpath-test-fonts](https://github.com/mattdesl/fontpath-test-fonts) - some fonts that have already been exported to JSON, so you can easily pull them in with NPM
 - [fontpath-vecmath](https://github.com/mattdesl/fontpath-vecmath) - vector/matrix utilities for font and glyph faces, built on [vecmath](https://github.com/mattdesl/vecmath)
 - [point-util](https://github.com/mattdesl/point-util) - used by shape2d-triangulate, but includes a couple of handy features like `pointInPoly`
+
+
+# license
+
+MIT
