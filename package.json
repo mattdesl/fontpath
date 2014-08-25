@@ -1,6 +1,6 @@
 {
   "name": "fontpath",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generates path and kerning info from a font",
   "main": "index.js",
   "bin": {
@@ -15,8 +15,7 @@
     "freetype2": "mattdesl/node-freetype2#shapes",
     "optimist": "^0.6.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "directories": {
     "example": "examples"
   },
