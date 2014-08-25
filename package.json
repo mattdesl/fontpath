@@ -16,7 +16,6 @@
     "optimist": "^0.6.1"
   },
   "devDependencies": {
-    "domready": "^1.0.5"
   },
   "directories": {
     "example": "examples"
