@@ -35,6 +35,10 @@ This project is a heavy WIP. Some things I want to explore:
 
 - [Triangulated text effect](http://mattdesl.github.io/fontpath-renderer/demo/tris.html) - a custom renderer using triangles 
 - [Custom steiner points](http://mattdesl.github.io/shape2d-triangulate/demo/glyph.html) - finer control over triangulation for creative effects
+- [WebGL Path Rendering](http://mattdesl.github.io/fontpath-gl/demo/)
+- [WebGL Triangulated Rendering](http://mattdesl.github.io/fontpath-gl/demo/wireframe.html)
+- [Bitmap Fonts](http://mattdesl.github.io/gl-sprite-text/demo/demo.html)
+- [Signed-Distance Field Bitmap Fonts](http://mattdesl.github.io/gl-sprite-text/demo/demo-sdf.html) 
 
 # modules
 
@@ -44,6 +48,7 @@ Most commonly, you might want to use a "renderer" which gives you a basic word-w
 
 - [fontpath-canvas](https://github.com/mattdesl/fontpath-canvas) - a renderer using 2D Canvas and paths for fill/stroke
 - [fontpath-gl](https://github.com/mattdesl/fontpath-gl) - a WebGL renderer using stackgl modules
+- [gl-sprite-text](https://github.com/mattdesl/gl-sprite-text) - a WebGL renderer for [BMFont](http://www.angelcode.com/products/bmfont/) files that can also be used for signed-distance field text
 
 Some other utilities that make up the ecosystem:
 
