@@ -31,6 +31,8 @@ This project is a heavy WIP. Some things I want to explore:
 - Maybe some tools for SDF rendering
 - Better Node/CLI integration
 
+New modules will be added to [text-modules](https://github.com/mattdesl/text-modules).
+
 # demos
 
 - [Triangulated text effect](http://mattdesl.github.io/fontpath-renderer/demo/tris.html) - a custom renderer using triangles 
@@ -41,6 +43,8 @@ This project is a heavy WIP. Some things I want to explore:
 - [Signed-Distance Field Bitmap Fonts](http://mattdesl.github.io/gl-sprite-text/demo/demo-sdf.html) 
 
 # modules
+
+*Note:* New modules will be more generic and not specifically tied to "fontpath." See [text-modules](https://github.com/mattdesl/text-modules).
 
 The framework is split into many small modules. Some of them aren't specific to fontpath, but are useful alongside it. You generally won't need to use all of them together; but instead, you'll pick and choose based on your particular application.
 
